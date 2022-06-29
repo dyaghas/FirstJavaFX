@@ -1,0 +1,8 @@
+.button {
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-text-fill: white;
+    -fx-background-color: #2e8be8;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}

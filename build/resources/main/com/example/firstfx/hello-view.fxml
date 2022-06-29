@@ -13,11 +13,6 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText"
-    GridPane.columnIndex="0"
-    GridPane.rowIndex="0"
-    GridPane.columnSpan="2"/>
-
     <Label text="Username"
     GridPane.columnIndex="0"
     GridPane.rowIndex="1"/>
@@ -34,9 +29,13 @@
     GridPane.columnIndex="1"
     GridPane.rowIndex="2"/>
 
-    <Button text="Login"
+    <Button text="Login" fx:id="loginBtn"
     GridPane.columnIndex="1"
     GridPane.rowIndex="3"
     onAction="#submitBtnClick"/>
+
+    <Label fx:id="welcomeText"
+           GridPane.columnIndex="1"
+           GridPane.rowIndex="4"/>
 
 </GridPane>

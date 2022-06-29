@@ -20,7 +20,8 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
 
         Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-        Scene scene = new Scene(root, 300, 300);
+        Scene scene = new Scene(root, 300, 250);
+        scene.getStylesheets().add("style.css");
 
         stage.setTitle("Login");
         stage.setScene(scene);

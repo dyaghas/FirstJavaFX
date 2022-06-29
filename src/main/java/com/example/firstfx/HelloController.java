@@ -1,6 +1,7 @@
 package com.example.firstfx;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -8,12 +9,12 @@ public class HelloController {
     @FXML private Label welcomeText;
     @FXML private TextField username;
     @FXML private TextField password;
+    @FXML private Button loginBtn;
 
     private int num = 0;
 
     @FXML
-    protected void submitBtnClick() {
-
+    protected void submitBtnClick(){
         if(username.getText().equals("admin") && password.getText().equals("admin")) {
             num++;
             welcomeText.setText("Welcome to JavaFX! " + num);
